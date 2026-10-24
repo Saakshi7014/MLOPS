@@ -1,0 +1,37 @@
+artifact_path: file:d:/SAKU/CODE/MLOPS/labs/P06-Workbench/mlruns/1/models/m-9e90a4810c7f4219ae4ac14828f5f940/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.13.15
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - sklearn.tree._tree.Tree
+is_signature_from_type_hint: false
+mlflow_version: 3.17.0
+model_id: m-9e90a4810c7f4219ae4ac14828f5f940
+model_size_bytes: 17206561
+model_uuid: m-9e90a4810c7f4219ae4ac14828f5f940
+prompts: null
+run_id: 1857e71fd25a448eaa597f79b1c24757
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "distance_km", "required": true}, {"type":
+    "long", "name": "prep_time_min", "required": true}, {"type": "long", "name": "traffic_level",
+    "required": true}, {"type": "long", "name": "rain", "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-08 17:29:40.257904'
